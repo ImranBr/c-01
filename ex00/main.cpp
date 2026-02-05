@@ -2,10 +2,10 @@
 
 int main(int ac, char **av)
 {
-    (void)ac;
-    (void)av;
-    Zombie* zombie = newZombie("Foo");
-    zombie->announce();
-    delete zombie;
-    randomChump("Bar");
+    (void)ac; (void)av;
+    Zombie* allocatedZombie = newZombie("Zom");
+    allocatedZombie->announce();
+    delete allocatedZombie;
+    randomChump("Bie");
 }
+
