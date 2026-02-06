@@ -6,13 +6,13 @@
 
 class Zombie
 {
-public:
-    Zombie(std::string name);
-    ~Zombie();
-    void announce() const;
-
-private:
-    std::string name;
+    private:
+        std::string name;
+    
+    public:
+        Zombie(std::string name);
+        ~Zombie();
+        void announce() const;
 };
 
 Zombie* newZombie(std::string name);
