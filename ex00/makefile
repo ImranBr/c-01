@@ -2,7 +2,7 @@ CC = c++
 CFLAGS = -Werror -Wextra -Wall -std=c++98 -g3 -MMD
 OBJ_DIR = objs
 
-SRCS = $(shell find -name '*.cpp')
+SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJS = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 
 DEPENDS = $(OBJS:.o=.d)

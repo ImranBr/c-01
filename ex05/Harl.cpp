@@ -22,5 +22,4 @@ void Harl::error()
 
 void complain(std::string level)
 {
-
 }

@@ -7,7 +7,7 @@ OBJS = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 
 DEPENDS = $(OBJS:.o=.d)
 
-NAME = ThisIsBrain
+NAME = SedIsForLosers
 -include $(DEPEND)
 
 .PHONY: all
@@ -19,7 +19,6 @@ $(NAME): $(OBJS)
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
-
 
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
