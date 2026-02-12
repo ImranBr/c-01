@@ -30,6 +30,7 @@ clean:
 .PHONY: fclean
 fclean: clean
 	rm -rf $(NAME)
+	rm filename.replace
 
 .PHONY:
 re: fclean all

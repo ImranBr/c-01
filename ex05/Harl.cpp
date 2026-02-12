@@ -32,5 +32,5 @@ void Harl::complain(std::string level)
             return;
         }
     }
-    std::cerr << "Maybe I complain for nothing..." << std::endl;
+    std::cerr << "\"" << level << "\" : Maybe I complain for nothing..." << std::endl;
 }
